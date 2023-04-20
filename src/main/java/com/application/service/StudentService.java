@@ -7,7 +7,7 @@ import com.application.entities.Student;
 
 public interface StudentService {
 
-	public List<Student> getStudents();
+	public List<Student> getAllData();
 
 
 

@@ -20,7 +20,7 @@ public class AppController {
 	//getting all the students list
 	@GetMapping("/student")
 	public List<Student> getStudents(){
-		return studentService.getStudents();
+		return studentService.getAllData();
 	}
 	
 	

@@ -27,7 +27,7 @@ public class StudentServiceImpl implements StudentService {
 //	private SubjectDao subjectDao;
 	
 	@Override
-	public List<Student> getStudents() {
+	public List<Student> getAllData() {
 		 return studentDao.findAll();
 	}
 	
