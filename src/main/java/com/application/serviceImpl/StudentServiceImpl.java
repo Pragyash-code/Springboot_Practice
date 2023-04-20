@@ -1,7 +1,7 @@
 /**
  * 
  */
-package StudentServiceImpl;
+package com.application.serviceImpl;
 
 import java.util.List;
 
