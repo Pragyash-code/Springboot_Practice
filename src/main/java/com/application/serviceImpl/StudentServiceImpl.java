@@ -1,4 +1,4 @@
-package com.application.service;
+package com.application.serviceImpl;
 
 import java.util.List;
 import java.util.Optional;
@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.application.dao.StudentDao;
-import com.application.dao.SubjectDao;
 import com.application.entities.Student;
+import com.application.service.StudentService;
 
 
 //created service as a interface and now implementing it here because we want loose coupling
@@ -33,8 +33,8 @@ public class StudentServiceImpl implements StudentService {
 	}
 
 	@Override
-	public Student addStudent(Student student) {
-		return studentDao.save(student);
+	public Student addStudent(Student Data) {
+		return studentDao.save(Data);
 	}
 
 	@Override

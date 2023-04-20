@@ -11,7 +11,7 @@ public interface StudentService {
 
 	public Optional<Student> getStudent(int rollNo);
 
-	public Student addStudent(Student student);
+	public Student addStudent(Student Data);
 
 	public Student updateStudent(Student student);
 	
