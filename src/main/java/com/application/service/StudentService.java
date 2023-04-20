@@ -9,12 +9,6 @@ public interface StudentService {
 
 	public List<Student> getStudents();
 
-	public Optional<Student> getStudent(int rollNo);
 
-	public Student addStudent(Student student);
-
-	public Student updateStudent(Student student);
-	
-	public void deleteStudent(int rollNo);
 
 }

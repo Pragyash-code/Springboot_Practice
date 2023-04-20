@@ -31,36 +31,5 @@ public class AppController {
 		return studentService.getStudents();
 	}
 	
-	//api to student info based on the roll no
-	@GetMapping("/student/{rollNo}")
-	public Optional<Student> getStudent(@PathVariable int rollNo ) {
-		return studentService.getStudent(rollNo);
-		
-	}
 	
-	//to add new student to db
-	@PostMapping("/student")
-	public Student addStudent(@RequestBody Student student ) {
-		return studentService.addStudent(student);
-		
-	}
-	
-	//to update the info already present in the db
-	@PutMapping("/student")
-	public Student updateStudent(@RequestBody Student student) {
-		return studentService.updateStudent(student);
-		
-	}
-	
-	//to delete the data of the student from the db
-	@DeleteMapping("/student/{rollNo}")
-	public ResponseEntity<HttpStatus> deleteStudent(@PathVariable int rollNo) {
-		try {
-		studentService.deleteStudent(rollNo);
-		return new ResponseEntity<>(HttpStatus.OK);
-		} catch(Exception e) {
-		return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
-		
-		}
-	}
 }
